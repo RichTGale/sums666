@@ -3,7 +3,7 @@ This program searches a wordlist for words who's character's decimal ascii value
 I have included a word list `words.txt` and the file `sums666.txt` which lists the words in `words.txt` who's characters decimal ascii values sum to 666.<br /><br />
 The sum excludes the null character (`\0`) and the newline character (`\n`).<br /><br />
 
-Preterist theologians typically support the interpretation that 666 is the numerical equivalent of the name and title Nero Caesar (Roman Emperor 54–68 AD). <https://en.wikipedia.org/wiki/Number_of_the_beast> <br /><br />
+`Preterist theologians typically support the interpretation that 666 is the numerical equivalent of the name and title Nero Caesar (Roman Emperor 54–68 AD).` - <https://en.wikipedia.org/wiki/Number_of_the_beast> <br /><br />
 
 Dependencies:
  - gcc
