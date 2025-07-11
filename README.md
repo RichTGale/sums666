@@ -24,7 +24,7 @@ chmod +x run.sh
 ./run.sh
 ```
 <br />
-To use your own word list, place your wordlist (.txt) in the root folder of this repo (/path/to/sums666/my_wordlist.txt). The run the following:
+To use your own word list, place your wordlist (.txt) in the root folder of this repo (/path/to/sums666/my_wordlist.txt). Then run the following:
 ```
 gcc -o sums666 mycutils.h mycutils.c sums666.c
 ```
