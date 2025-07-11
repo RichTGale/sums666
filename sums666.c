@@ -41,6 +41,7 @@ int main(int argc, char* argv[])
 
     wordlist = openfs(argv[1], "r");
     savefile = openfs(argv[2], "w");
+    freed = true;
 
     while (readfsl(wordlist, &line))
     {
