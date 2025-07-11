@@ -15,15 +15,15 @@ void print_help()
 bool sums666(char* word)
 {
     int wordlen = 0;
-    int score = 0;
+    int sum = 0;
 
     while (word[wordlen] != '\0' && word[wordlen] != '\n')
     {
-        score += (int) word[wordlen];
+        sum += (int) word[wordlen];
         wordlen++;
     }
 
-    if (score == 666)
+    if (sum == 666)
         return true;
 
     return false;
