@@ -4,7 +4,7 @@ I have included a word list `words.txt` and the file `sums666.txt` which lists t
 The sum excludes the null character (`\0`) and the newline character (`\n`).<br /><br />
 
 `Preterist theologians typically support the interpretation that 666 is the numerical equivalent of the name and title Nero Caesar (Roman Emperor 54–68 AD).` - <https://en.wikipedia.org/wiki/Number_of_the_beast> <br /><br />
-I have used the ascii decimal equivalent. <br /><br />
+I have used the ascii decimal equivalent. - <https://www.ascii-code.com/> <br /><br />
 
 Dependencies:
  - gcc
