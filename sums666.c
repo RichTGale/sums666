@@ -26,7 +26,7 @@ bool sums666(char* word)
     if (score == 666)
         return true;
 
-    return false;;
+    return false;
 }
 
 int main(int argc, char* argv[])
