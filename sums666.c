@@ -5,6 +5,14 @@
 
 #include "mycutils.h"
 
+void print_help()
+{
+    printf( "Searches a wordlist for words who's ascii sums to 666 and saves them to a file.\n\n"
+            "USAGE:\n"
+            "find666 <wordlist> <savefile>\n");
+    exit(EXIT_FAILURE);
+}
+
 bool sums666(char* word)
 {
     int wordlen = 0;
@@ -24,17 +32,20 @@ bool sums666(char* word)
 
 int main(int argc, char* argv[])
 {
-    FILE* wordlist = openfs(argv[1], "r");
-    FILE* savefile = openfs(argv[2], "w");
+    FILE* wordlist;
+    FILE* savefile;
     char* line;
-    bool freed = false;
-
+    bool freed;
+    
+    if (argc < 2)
+        print_help();
+    
     if (!strcmp(argv[1], "--help") || !strcmp(argv[1], "-h"))
-    {
-        printf( "Searches a wordlist for words who's ascii sums to 666 and saves them to a file.\n\n"
-                "USAGE:\n"
-                "find666 <wordlist> <savefile>\n");
-    }
+        print_help();
+    
+    wordlist = openfs(argv[1], "r");
+    savefile = openfs(argv[2], "w");
+    freed = false;
 
     while (readfsl(wordlist, &line))
     {
