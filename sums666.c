@@ -40,8 +40,6 @@ int main(int argc, char* argv[])
     if (argc < 3 || argc > 3)
         print_help();
     
-    if (!strcmp(argv[1], "--help") || !strcmp(argv[1], "-h"))
-        print_help();
     
     wordlist = openfs(argv[1], "r");
     savefile = openfs(argv[2], "w");
