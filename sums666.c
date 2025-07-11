@@ -8,7 +8,7 @@ void print_help()
 {
     printf( "This program searches a wordlist for words who's character's decimal ascii values sum to 666 and saves them to a file.\n\n"
             "USAGE:\n"
-            "find666 <wordlist> <savefile>\n");
+            "./sums666 <wordlist> <savefile>\n");
     exit(EXIT_FAILURE);
 }
 
