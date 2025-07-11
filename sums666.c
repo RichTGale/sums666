@@ -37,7 +37,7 @@ int main(int argc, char* argv[])
     char* line;
     bool freed;
     
-    if (argc < 2)
+    if (argc < 3 || argc > 3)
         print_help();
     
     if (!strcmp(argv[1], "--help") || !strcmp(argv[1], "-h"))
