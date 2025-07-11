@@ -45,7 +45,6 @@ int main(int argc, char* argv[])
 
     while (readfsl(wordlist, &line))
     {
-        readfsl(wordlist, &line);
         freed = false;
         if (sums666(line))
         {
