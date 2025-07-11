@@ -38,8 +38,7 @@ int main(int argc, char* argv[])
     
     if (argc < 3 || argc > 3)
         print_help();
-    
-    
+
     wordlist = openfs(argv[1], "r");
     savefile = openfs(argv[2], "w");
     freed = false;
